@@ -1,5 +1,7 @@
 # DurationEstimate
 
+[![Build Status](https://travis-ci.org/ollie/duration_estimate.svg)](https://travis-ci.org/ollie/duration_estimate)
+
 Do something to a collection of items and see how long it is going to take.
 Useful for long-running Rake tasks.
 
