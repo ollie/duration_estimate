@@ -1,7 +1,7 @@
 describe DurationEstimate do
   it 'does it all' do
     action = lambda do
-      DurationEstimate.each(1..11) do |_item, e|
+      DurationEstimate.each((1..11).to_a) do |_item, e|
         "#{ DurationEstimate::TerminalFormatter.format(e) }"
       end
     end

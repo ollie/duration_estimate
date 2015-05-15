@@ -1,5 +1,5 @@
 describe DurationEstimate do
-  let(:items) { 1..10 }
+  let(:items) { (1..10).to_a }
 
   it 'items' do
     estimate = DurationEstimate.new(items)
