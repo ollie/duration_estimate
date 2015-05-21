@@ -1,6 +1,4 @@
-# DurationEstimate
-
-[![Build Status](https://travis-ci.org/ollie/duration_estimate.svg)](https://travis-ci.org/ollie/duration_estimate)
+# DurationEstimate [![Build Status](https://img.shields.io/travis/ollie/duration_estimate/master.svg)](https://travis-ci.org/ollie/duration_estimate) [![Code Climate](https://img.shields.io/codeclimate/github/ollie/duration_estimate.svg)](https://codeclimate.com/github/ollie/duration_estimate) [![Gem Version](https://img.shields.io/gem/v/duration_estimate.svg)](https://rubygems.org/gems/duration_estimate)
 
 Do something to a collection of items and see how long it is going to take.
 Useful for long-running Rake tasks.
