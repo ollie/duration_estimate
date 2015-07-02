@@ -49,5 +49,5 @@
 #   11/11 (100.00 %) 11:47:30, 00:00:00
 class DurationEstimate
   # Version, man!
-  VERSION = '0.0.1'
+  VERSION = '0.0.2'
 end
