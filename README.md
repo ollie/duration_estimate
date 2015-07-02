@@ -9,7 +9,7 @@ Useful for long-running Rake tasks.
 items = 0..10000 # Some data set.
 
 DurationEstimate.each(items) do |item, e|
-  print "\r#{ DurationEstimate::TerminalFormatter.format(e) }"
+  print "\r#{DurationEstimate::TerminalFormatter.format(e)}"
 
   # Do something time consuming with item.
   sleep 0.001
@@ -28,7 +28,7 @@ media = Media
 
 File.open('missing-media.log', 'w') do |log|
   DurationEstimate.each(media, size: media.count) do |medium, e|
-    print "\r#{ DurationEstimate::TerminalFormatter.format(e) }"
+    print "\r#{DurationEstimate::TerminalFormatter.format(e)}"
 
     unless medium.on_s3?
       log.puts medium.id
