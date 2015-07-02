@@ -138,9 +138,9 @@ class DurationEstimate
     hours, minutes   = minutes.divmod(60)
 
     [
-      "#{ format('%02d', hours) }",
-      "#{ format('%02d', minutes) }",
-      "#{ format('%02d', seconds) }"
+      "#{format('%02d', hours)}",
+      "#{format('%02d', minutes)}",
+      "#{format('%02d', seconds)}"
     ].compact.join(':')
   end
 

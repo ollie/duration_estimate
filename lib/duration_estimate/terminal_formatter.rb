@@ -26,10 +26,10 @@ class DurationEstimate
     # @return [String]
     def format
       [
-        "#{ items_done }/#{ estimate.items_size }",
-        "(#{ percentage } %)",
-        "#{ estimate.ends_at.strftime('%H:%M:%S') },",
-        "#{ estimate.time_remaining }"
+        "#{items_done}/#{estimate.items_size}",
+        "(#{percentage} %)",
+        "#{estimate.ends_at.strftime('%H:%M:%S')},",
+        "#{estimate.time_remaining}"
       ].join(' ')
     end
 
