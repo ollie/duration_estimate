@@ -108,6 +108,19 @@ class DurationEstimate
   # @yieldparam item [Object]           Current item in collection.
   # @yieldparam e    [DurationEstimate] This instance.
   def each
+    unless block_given?
+      return Enumerator.new do |y|
+        items.each do |item|
+          measure do
+            self.items_done      += 1 # rubocop:disable Style/SpaceAroundOperators
+            self.items_remaining -= 1
+
+            y << [item, self]
+          end
+        end
+      end
+    end
+
     items.each do |item|
       measure do
         self.items_done      += 1 # rubocop:disable Style/SpaceAroundOperators

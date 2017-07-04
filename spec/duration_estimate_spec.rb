@@ -41,6 +41,19 @@ describe DurationEstimate do
     expect(estimate.percentage).to eq(100.0)
   end
 
+  it 'each.with_index' do
+    last_estimate = nil
+    last_index    = nil
+
+    DurationEstimate.each(items).with_index do |(_item, e), index|
+      last_estimate = e
+      last_index    = index
+    end
+
+    expect(last_estimate.percentage).to eq(100.0)
+    expect(last_index).to eq(9)
+  end
+
   context 'Some items done' do
     let(:estimate) do
       estimate = DurationEstimate.new(items)
